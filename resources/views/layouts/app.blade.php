@@ -6,12 +6,10 @@
     <title>@yield('title', 'FestgeldFinder24 - Zeitung für Finanzen, Wirtschaft & Zinsen')</title>
     <meta name="description" content="@yield('meta_description', 'Deutschlands unabhängiges Finanznachrichten-Portal. Aktuelle Berichte zu EZB, Wirtschaft, Börse, Märkten und Geldanlage.')">
     
-    <!-- Google Fonts Inter & Merriweather for classic news typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -34,21 +32,15 @@
         }
     </script>
     <style>
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="flex flex-col min-h-screen bg-slate-100 text-slate-900 font-sans antialiased selection:bg-red-600 selection:text-white">
 
-    <!-- Top Newspaper Header Info Bar (Mobile-Friendly Responsive) -->
+    <!-- Top Info Bar -->
     <div class="bg-slate-950 text-slate-300 text-[11px] border-b border-slate-800 py-1.5 px-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <!-- Left Date & Status -->
             <div class="flex items-center space-x-3 text-xs">
                 <span class="font-bold text-slate-200">27.08.2026</span>
                 <span class="text-slate-700">|</span>
@@ -60,7 +52,6 @@
                 </span>
             </div>
             
-            <!-- Right Quick Links -->
             <div class="flex items-center space-x-3 text-[11px]">
                 <a href="{{ route('news.index') }}" class="hover:text-white transition-colors hidden xs:inline">Archiv</a>
                 <span class="text-slate-700 hidden xs:inline">•</span>
@@ -93,40 +84,29 @@
                 <span class="text-slate-400">EUR/USD:</span>
                 <span class="font-bold text-slate-200">1,0912 ▲</span>
             </div>
-            <span class="text-slate-700">|</span>
-
-            <div class="flex items-center space-x-2">
-                <span class="text-slate-400">Gold (Unze):</span>
-                <span class="font-bold text-amber-400">$ 2.510,40 ▲</span>
-            </div>
         </div>
     </div>
 
-    <!-- Main Newspaper Masthead Header -->
+    <!-- Main Header -->
     <header class="bg-white border-b border-slate-300 shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4">
             <div class="flex items-center justify-between">
                 
-                <!-- Left Edition Badge (Desktop) -->
                 <div class="hidden lg:block text-xs text-slate-500 space-y-0.5 border-l-2 border-emerald-600 pl-3">
                     <div class="font-bold text-slate-900 uppercase tracking-wider">Finanz- & WIRTSCHAFTSZEITUNG</div>
                     <div>Unabhängig • Objektiv • Geprüft</div>
                     <div class="text-[10px] text-slate-400">Geprüft von BaFin-ID: 10161369</div>
                 </div>
 
-                <!-- Center Main Newspaper Logo -->
                 <a href="{{ route('home') }}" class="flex flex-col items-center group text-center">
-                    <img src="{{ asset('images/logo.svg') }}" alt="FestgeldFinder24" class="h-10 sm:h-14 w-auto transition-transform group-hover:scale-102">
-                    <span class="text-[9px] sm:text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase mt-1">DEUTSCHLANDS UNABHÄNGIGES FINANZ- PORTAL</span>
+                    @include('partials.logo')
                 </a>
 
-                <!-- Mobile Menu Button & Action Button -->
                 <div class="flex items-center space-x-2">
                     <a href="{{ route('news.index') }}" class="hidden sm:inline-flex px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-extrabold text-xs rounded-lg shadow-sm transition-all">
                         Nachrichten Lesen
                     </a>
 
-                    <!-- Hamburger Button for Mobile -->
                     <button id="mobile-toggle-btn" type="button" class="p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none border border-slate-300">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                     </button>
@@ -135,7 +115,6 @@
             </div>
         </div>
 
-        <!-- Navigation Bar -->
         <div class="bg-slate-950 text-white border-t border-b border-slate-900">
             <div class="max-w-7xl mx-auto px-4">
                 <nav class="flex items-center space-x-1 overflow-x-auto py-1.5 no-scrollbar text-xs font-bold uppercase tracking-wider whitespace-nowrap">
@@ -164,15 +143,11 @@
             </div>
         </div>
 
-        <!-- Mobile Drawer Menu -->
         <div id="mobile-menu-drawer" class="hidden bg-slate-900 text-white border-b border-slate-800 px-4 py-4 space-y-3">
-            <div class="font-bold text-xs text-amber-400 uppercase tracking-wider mb-2 border-b border-slate-800 pb-1">Kategorien & Rubriken</div>
             <a href="{{ route('home') }}" class="block px-3 py-2 rounded text-sm font-bold bg-slate-800 text-white">Startseite</a>
             <a href="{{ route('news.index', ['category' => 'Politik & EZB']) }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Politik & EZB</a>
             <a href="{{ route('news.index', ['category' => 'Wirtschaft & Konjunktur']) }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Wirtschaft & Konjunktur</a>
             <a href="{{ route('news.index', ['category' => 'Börse & Märkte']) }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Börse & Märkte</a>
-            <a href="{{ route('news.index', ['category' => 'Immobilien & Zinsen']) }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Immobilien & Zinsen</a>
-            <a href="{{ route('news.index', ['category' => 'Ratgeber']) }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Ratgeber & Recht</a>
             <a href="{{ route('impressum') }}" class="block px-3 py-2 rounded text-sm font-bold text-amber-400 bg-slate-800/80">Impressum Angaben (L&P GmbH)</a>
         </div>
     </header>
@@ -185,7 +160,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="space-y-3">
-                    <img src="{{ asset('images/logo.svg') }}" alt="FestgeldFinder24" class="h-10 w-auto">
+                    <div class="w-48">
+                        @include('partials.logo')
+                    </div>
                     <p class="text-slate-400 leading-relaxed text-xs font-serif">
                         FestgeldFinder24 ist das unabhängige Finanzmedien-Portal der L&P Kapitalverwaltungs GmbH.
                     </p>

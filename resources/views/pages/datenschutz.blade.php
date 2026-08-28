@@ -25,7 +25,7 @@
             <p>
                 L&P Kapitalverwaltungs GmbH<br>
                 Grosse Bleichen 34, 20354 Hamburg, Deutschland<br>
-                E-Mail: datenschutz@festgeldfinder24.de<br>
+                E-Mail: info@festgeldfinger.com<br>
                 BaFin-ID: 10161369 | Bak Nr.: 161369
             </p>
 

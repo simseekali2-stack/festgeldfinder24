@@ -8,6 +8,31 @@
 <section class="py-8 bg-slate-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
+        <!-- BaFin Regulatory & Operating Company Notice Banner -->
+        <div class="mb-6 bg-slate-900 border border-slate-800 rounded-xl p-4 sm:p-5 text-white shadow-md">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="space-y-1">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-emerald-500/20 text-emerald-400 text-[11px] font-extrabold px-2.5 py-0.5 rounded uppercase tracking-wider border border-emerald-500/30">
+                            Regulierter Finanzdienstleister
+                        </span>
+                        <span class="text-xs text-slate-400">BaFin-ID: 10161369 | Bak Nr.: 161369</span>
+                    </div>
+                    <h2 class="text-base font-bold text-slate-100">
+                        Ein Dienst der L&P Kapitalverwaltungs GmbH
+                    </h2>
+                    <p class="text-xs text-slate-300 max-w-3xl leading-relaxed">
+                        FestgeldFinder24 wird betrieben von der <strong>L&P Kapitalverwaltungs GmbH</strong> (Hamburg), einer von der BaFin zugelassenen und beaufsichtigten Kapitalverwaltungsgesellschaft / Finanzdienstleistungseinrichtung. Wir bieten transparente Finanzinformationen, Zinsvergleiche und Vermittlungsdienste für Festgeld- & Geldanlageprodukte in Deutschland und der EU.
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <a href="{{ route('impressum') }}" class="inline-flex items-center text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg transition-colors shadow">
+                        Aufsichtsrechtliche Angaben &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- Breaking News Alert Banner -->
         <div class="mb-6 p-3 bg-red-700 text-white rounded-lg shadow-sm flex items-center justify-between text-xs sm:text-sm font-bold">
             <div class="flex items-center space-x-2 overflow-hidden">

@@ -72,7 +72,7 @@
                         </div>
                         <div>
                             <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">E-Mail</h3>
-                            <p class="text-sm font-bold text-slate-900 mt-1"><a href="mailto:info@festgeldfinger.com" class="hover:underline text-indigo-600">info@festgeldfinger.com</a></p>
+                            <p class="text-sm font-bold text-slate-900 mt-1"><a href="mailto:info@festgeldfinder24.com" class="hover:underline text-indigo-600">info@festgeldfinder24.com</a></p>
                         </div>
                     </div>
 

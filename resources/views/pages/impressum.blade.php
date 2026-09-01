@@ -22,18 +22,45 @@
         
         <div class="bg-white p-8 sm:p-12 rounded-2xl border border-slate-200 shadow-xl space-y-8 text-slate-800 leading-relaxed">
             
-            <!-- Provider & Address -->
+            <!-- Provider & Business Description -->
             <div>
                 <h2 class="text-xl font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4 flex items-center">
                     <svg class="w-5 h-5 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-                    Anbieter der Website
+                    Betreiber & Anbieter der Website
                 </h2>
-                <div class="space-y-1 text-base">
-                    <p class="font-black text-slate-900 text-xl">Oskar Ehrenfried Heinrich, Sebastian Hartrott Geschäftsführer</p>
-                    <p class="font-bold text-slate-800 text-lg">L&P Kapitalverwaltungs GmbH</p>
-                    <p class="text-slate-700">Grosse Bleichen 34</p>
-                    <p class="text-slate-700">20354 Hamburg</p>
-                    <p class="text-slate-700 font-semibold">Deutschland</p>
+                <div class="space-y-2 text-base">
+                    <p class="font-bold text-slate-900 text-xl">L&P Kapitalverwaltungs GmbH</p>
+                    <p class="text-slate-700">Diese Internetpräsenz (festgeldfinder24.com) wird im Auftrag und unter eigener Regie der L&P Kapitalverwaltungs GmbH betrieben.</p>
+                    <p class="text-slate-700"><strong>Anschrift:</strong> Grosse Bleichen 34, 20354 Hamburg, Deutschland</p>
+                    <p class="text-slate-700"><strong>Geschäftsführer:</strong> Oskar Ehrenfried Heinrich, Sebastian Hartrott</p>
+                </div>
+            </div>
+
+            <!-- Regulatory & BaFin Scope Section -->
+            <div class="p-6 bg-slate-100 rounded-xl border border-slate-300 space-y-3">
+                <h3 class="text-sm font-extrabold text-slate-900 uppercase tracking-wider flex items-center">
+                    <svg class="w-5 h-5 text-emerald-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    Aufsichtsbehörde & Regulierungsstatus (BaFin)
+                </h3>
+                <p class="text-sm text-slate-800 leading-relaxed">
+                    Die <strong>L&P Kapitalverwaltungs GmbH</strong> ist eine von der Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin) zugelassene und beaufsichtigte Finanzdienstleistungseinrichtung / Kapitalverwaltungsgesellschaft.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-semibold bg-white p-4 rounded-lg border border-slate-200">
+                    <div>
+                        <span class="text-slate-500 block uppercase">BaFin-ID</span>
+                        <span class="text-slate-900 font-bold text-sm">10161369</span>
+                    </div>
+                    <div>
+                        <span class="text-slate-500 block uppercase">Bak-Nummer</span>
+                        <span class="text-slate-900 font-bold text-sm">161369</span>
+                    </div>
+                </div>
+                <div class="text-xs text-slate-700 space-y-1">
+                    <p class="font-bold text-slate-900">Umfang der BaFin-genehmigten Finanzdienstleistungen & Produkte:</p>
+                    <ul class="list-disc list-inside space-y-1 text-slate-700">
+                        <li>Erbringung von Finanzdienstleistungen im Rahmen der Erlaubnis nach KWG / KAGB (Kapitalverwaltung, Anlagevermittlung & Vermögensverwaltung).</li>
+                        <li>Bereitstellung unabhängiger Produkt- & Zinsinformationen zu Festgeld-, Festzins- und Festgeldanlagen europäischer Partnerbanken.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -41,20 +68,21 @@
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-200">
                 <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
                     <h3 class="text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-2">Vertreten durch</h3>
-                    <p class="text-base font-bold text-slate-900">Oskar Ehrenfried Heinrich, Sebastian Hartrott Geschäftsführer</p>
-                    <p class="text-xs font-semibold text-slate-700 mt-1">L&P Kapitalverwaltungs GmbH</p>
+                    <p class="text-base font-bold text-slate-900">Oskar Ehrenfried Heinrich, Sebastian Hartrott</p>
+                    <p class="text-xs font-semibold text-slate-700 mt-1">Geschäftsführer, L&P Kapitalverwaltungs GmbH</p>
                 </div>
 
                 <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
-                    <h3 class="text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-2">Registrierung</h3>
+                    <h3 class="text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-2">Registrierung & Aufsicht</h3>
                     <p class="text-sm font-bold text-slate-900">BaFin-ID: 10161369</p>
                     <p class="text-sm font-bold text-slate-900">Bak Nr.: 161369</p>
+                    <p class="text-xs text-slate-600 mt-1">Aufsichtsbehörde: BaFin</p>
                 </div>
 
                 <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
                     <h3 class="text-xs font-extrabold text-slate-500 uppercase tracking-wider mb-2">Kontakt</h3>
                     <p class="text-sm font-semibold text-slate-800">Telefon: <a href="tel:+49040256877" class="text-indigo-600 hover:underline">+49 040256877</a></p>
-                    <p class="text-sm font-semibold text-slate-800">E-Mail: <a href="mailto:info@festgeldfinger.com" class="text-indigo-600 hover:underline">info@festgeldfinger.com</a></p>
+                    <p class="text-sm font-semibold text-slate-800">E-Mail: <a href="mailto:info@festgeldfinder24.com" class="text-indigo-600 hover:underline">info@festgeldfinder24.com</a></p>
                     <p class="text-sm font-semibold text-slate-800">Web: <a href="{{ url('/') }}" class="text-indigo-600 hover:underline">{{ request()->getHost() }}</a></p>
                 </div>
             </div>

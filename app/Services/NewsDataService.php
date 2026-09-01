@@ -64,32 +64,6 @@ class NewsDataService
                 '
             ],
             [
-                'id' => 3,
-                'slug' => 'dax-rekordjagd-aktienmaerkte-exportunternehmen-gewinne',
-                'title' => 'BÖRSE: DAX im Aufwind – Deutsche Exportwerte profitieren von globaler Nachfrage',
-                'subtitle' => 'Frankfurter Parkett im Plus: Automobil- und Technologieaktien führen die Gewinnerliste im Spätsommer an.',
-                'excerpt' => 'Der Deutsche Aktienindex setzt seine positive Entwicklung fort. Anleger blicken optimistisch auf die anstehenden Quartalszahlen europäischer Konzerne.',
-                'category' => 'Börse & Märkte',
-                'tag' => 'Börse',
-                'author' => 'Dr. Michael Weber',
-                'author_role' => 'Chef-Redakteur Geldanlage',
-                'date' => '27. August 2026',
-                'time' => '13:30 Uhr',
-                'read_time' => '4 Min.',
-                'comments_count' => 24,
-                'views_count' => '10.920',
-                'image' => '/images/news/top-festgeld.svg',
-                'featured' => false,
-                'editor_pick' => false,
-                'key_takeaways' => [
-                    'DAX konsolidiert auf neuem Jahreshoch.',
-                    'Starke Nachfrage aus Nordamerika stützt Maschinen- und Chemiewerte.',
-                ],
-                'content' => '
-                    <p class="lead">Gute Stimmung am Frankfurter Parkett: Mit Schwung schloss der DAX den Handelstag im Plus. Börsenexperten führen die Kauflaune auf überzeugende Konzernbilanzen zurück.</p>
-                '
-            ],
-            [
                 'id' => 4,
                 'slug' => 'immobilienmarkt-2026-bauzinsen-neue-impulse-fuer-hauskaeufer',
                 'title' => 'IMMOBILIEN: Bauzinsen kühlen ab – Neue Chancen für Immobilienkäufer und Bauherren',

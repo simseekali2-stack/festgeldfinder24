@@ -65,16 +65,10 @@
     <!-- Live Financial Market Ticker Bar -->
     <div class="bg-slate-900 text-white text-xs py-2 border-b border-slate-800 overflow-x-auto no-scrollbar shadow-inner">
         <div class="max-w-7xl mx-auto px-4 flex items-center space-x-6 whitespace-nowrap">
-            <span class="bg-news-red text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider flex items-center flex-shrink-0 shadow">
+            <span class="bg-news-emerald text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider flex items-center flex-shrink-0 shadow">
                 <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping mr-1.5"></span>
-                Börse & Märkte
+                Zins- & Festgeldmarkt
             </span>
-
-            <div class="flex items-center space-x-2">
-                <span class="text-slate-400">DAX:</span>
-                <span class="font-bold text-emerald-400">18.420,50 ▲ (+0,42%)</span>
-            </div>
-            <span class="text-slate-700">|</span>
 
             <div class="flex items-center space-x-2">
                 <span class="text-slate-400">EZB Leitzins:</span>
@@ -83,8 +77,14 @@
             <span class="text-slate-700">|</span>
 
             <div class="flex items-center space-x-2">
-                <span class="text-slate-400">EUR/USD:</span>
-                <span class="font-bold text-slate-200">1,0912 ▲</span>
+                <span class="text-slate-400">Top Festgeld 1 Jahr:</span>
+                <span class="font-bold text-emerald-400">bis zu 4,10% p.a. ▲</span>
+            </div>
+            <span class="text-slate-700">|</span>
+
+            <div class="flex items-center space-x-2">
+                <span class="text-slate-400">EU-Einlagensicherung:</span>
+                <span class="font-bold text-slate-200">100.000 € geschützt</span>
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@
             <div class="flex items-center justify-between">
                 
                 <div class="hidden lg:block text-xs text-slate-500 space-y-0.5 border-l-2 border-emerald-600 pl-3">
-                    <div class="font-bold text-slate-900 uppercase tracking-wider">Finanz- & WIRTSCHAFTSZEITUNG</div>
+                    <div class="font-bold text-slate-900 uppercase tracking-wider">Festgeld & Zinsportal</div>
                     <div>Unabhängig • Objektiv • Geprüft</div>
                     <div class="text-[10px] text-slate-400">Geprüft von BaFin-ID: 10161369</div>
                 </div>
@@ -129,9 +129,6 @@
                     <a href="{{ route('news.index', ['category' => 'Wirtschaft & Konjunktur']) }}" class="px-3 py-2 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition-colors">
                         Wirtschaft & Konjunktur
                     </a>
-                    <a href="{{ route('news.index', ['category' => 'Börse & Märkte']) }}" class="px-3 py-2 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition-colors">
-                        Börse & Märkte
-                    </a>
                     <a href="{{ route('news.index', ['category' => 'Immobilien & Zinsen']) }}" class="px-3 py-2 rounded hover:bg-slate-800 text-slate-300 hover:text-white transition-colors">
                         Immobilien & Zinsen
                     </a>
@@ -152,7 +149,6 @@
             <a href="{{ route('home') }}" class="block px-3 py-2 rounded text-sm font-bold bg-slate-800 text-white">Startseite</a>
             <a href="{{ route('news.index', ['category' => 'Politik & EZB']) }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Politik & EZB</a>
             <a href="{{ route('news.index', ['category' => 'Wirtschaft & Konjunktur']) }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Wirtschaft & Konjunktur</a>
-            <a href="{{ route('news.index', ['category' => 'Börse & Märkte']) }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Börse & Märkte</a>
             <a href="{{ route('kontakt') }}" class="block px-3 py-2 rounded text-sm font-medium text-slate-200 hover:bg-slate-800">Kontakt</a>
             <a href="{{ route('impressum') }}" class="block px-3 py-2 rounded text-sm font-bold text-amber-400 bg-slate-800/80">Impressum</a>
         </div>
@@ -170,14 +166,14 @@
                         @include('partials.logo')
                     </div>
                     <p class="text-slate-400 leading-relaxed text-xs font-serif">
-                        Unabhängiges Finanzmedien-Portal für Festgeld, Zinsen und Geldanlage.
+                        Unabhängiges Finanz- & Zinsportal für Festgeld und Geldanlage.
                     </p>
                 </div>
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-3 border-b border-slate-800 pb-1">Rubriken</h4>
                     <ul class="space-y-2">
                         <li><a href="{{ route('news.index', ['category' => 'Wirtschaft & Konjunktur']) }}" class="hover:text-emerald-400">Wirtschaft & Konjunktur</a></li>
-                        <li><a href="{{ route('news.index', ['category' => 'Börse & Märkte']) }}" class="hover:text-emerald-400">Börse & Märkte</a></li>
+                        <li><a href="{{ route('news.index', ['category' => 'Immobilien & Zinsen']) }}" class="hover:text-emerald-400">Immobilien & Zinsen</a></li>
                         <li><a href="{{ route('news.index') }}" class="hover:text-emerald-400">Finanznachrichten Archiv</a></li>
                     </ul>
                 </div>
